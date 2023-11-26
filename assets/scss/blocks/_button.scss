@@ -1,0 +1,11 @@
+@import "../base/variables";
+
+.button-main {
+  background: linear-gradient(to top, $primary, $secondary);
+  border-radius: 25px;
+  color: $light;
+  font-weight: 500;
+  height: 50px;
+  padding: 13px 16px;
+  outline: none;
+}

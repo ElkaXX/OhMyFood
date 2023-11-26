@@ -1,0 +1,131 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text:#353535;
+  --main-bg-color: #F6F6F6;
+  --ellipse-color: var(--Primary, #9356DC);
+  --h1-font-size: 28px;
+  --h2-font-size: 24px;
+  --h3-font-size: 16px;
+  --span-font-size: 16px;
+  --p-font-size-small: 15px;
+  --p-font-size-medium: 16px;
+  --p-font-size-large: 18px;
+  --a-font-size: 16px;
+  --p-font-weight: normal;
+  --a-font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  display: block;
+}
+
+body {
+  width: 375px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.button-gradient{
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 25px;
+  display: inline-flex;
+  color: white;
+  font-weight: 500;
+}
+/* Tailles des boutons */
+.large {
+  width: 218px;
+  height: 50px;
+  margin-top: 27px;
+}
+.medium {
+  width: 186px;
+  height: 50px;
+  margin-top: 40px;
+}
+.button-ellipse{
+  width: 24px;
+  height: 24px; 
+  background-color: var(--ellipse-color);
+  border-radius: 50%;
+  color: white;
+}
+.button__selection{
+  width: 322px;
+  height: 72px;
+  background: var(--m);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin: 26px;
+}
+
+.button__selection a{
+  color: black;
+}
+.card img{
+  height: 231px;
+  width: 346px;
+}
+
+.header {
+  flex-direction: column; 
+}
+
+.header__nav{
+  display: flex;
+  height: 63px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  width: 197px;
+  height: 36px;
+  padding: 0px 19px 0px 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__localisation{
+  display: flex;
+  background-color: #EAEAEA;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.header__localisation a {
+  color: var(--color-text);
+}
+
+.homepage__reception{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+  background-color: var(--main-bg-color);
+  height: 287px;
+}
+
+.homepage__reception p{
+  font-size: var(--p-font-size-large);
+  color: var(--color-text);
+}
+
+.homepage__fonctionnement{
+ text-align: start;
+ margin-top: 48px;
+}
+
+  
