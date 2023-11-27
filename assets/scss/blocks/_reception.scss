@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+.reception {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0 57px 0;
+  text-align: center;
+
+  &__description {
+    margin-top: 18px;
+  }
+
+  &__button {
+    margin-top: 27px;
+  }
+}

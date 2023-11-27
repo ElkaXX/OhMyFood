@@ -1,0 +1,25 @@
+@import "../base/variables";
+
+.location {
+  display: flex;
+  background-color: $mid-light;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin-right: 17px;
+  }
+
+  &__text {
+    color: $mid;
+    font-weight: 500;
+  }
+}
