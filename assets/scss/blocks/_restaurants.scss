@@ -1,0 +1,23 @@
+@import "../base/variables";
+.restaurants{
+    padding: 48px 0 68px 0;
+
+        &__card{
+            height: 100%;
+            margin-top: 25px;
+        }
+            &__images{
+                width: 346px;
+                height: 231px;
+                border-radius: 15px 15px 0 0;
+            }
+                &__menu{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                &__subtitle{
+                    font-size: 17px;
+                    font-weight: 300;
+                }
+}

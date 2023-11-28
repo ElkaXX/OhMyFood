@@ -7,11 +7,42 @@
     margin-top: 25px;
     list-style: none;
     display: flex;
+    flex-direction: column;
   }
 
   &__button {
     position: relative;
     display: flex;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    background: $background-tertiary;
+    width: 322px;
+    height: 72px;
+    padding: 28px 38px;
+    outline: none;
+    border: none;
+    gap:25px;
+    margin-right: 36px;
   }
- 
-}
+
+    &__elipse{
+      position: absolute;
+      top: 50%;
+      left:0;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px; 
+      background-color:$primary;
+      border-radius: 50%;
+      color: white;
+    }
+
+    &__text{
+      font-weight: 500;
+    }
+
+    &__icon{
+      color: $mid-tint;
+    }
+    
+  }
