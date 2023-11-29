@@ -11,6 +11,39 @@
                 height: 231px;
                 border-radius: 15px 15px 0 0;
             }
+            @keyframes blinkAnimation {
+                0% {
+                  opacity: $blink-opacity-start;
+                }
+                50% {
+                  opacity: $blink-opacity-middle;
+                }
+                100% {
+                  opacity: $blink-opacity-end;
+                }
+              }
+                &__marker{
+                    color: $tertiary-dark;
+                    font-size: 14px;
+                    font-weight: 500;
+                    width: 80px;
+                    height: 29px;
+                    border-radius: 2px;
+                    background: $tertiary;
+                    text-decoration: none;
+                    position: absolute;
+                    text-align: center;
+                    height: fit-content;
+                    padding: 7px 9px;
+                    left: 210px;
+                    animation: blinkAnimation 2s infinite;
+            }
+
+
+            &__text{
+                margin-left: 13px;
+            }
+
                 &__menu{
                     font-size: 18px;
                     font-weight: 700;
@@ -20,4 +53,12 @@
                     font-size: 17px;
                     font-weight: 300;
                 }
-}
+                &__icon {
+                    cursor: pointer;
+                    background-color: $secondary;
+                    
+                }
+            }
+                  
+                    
+                
