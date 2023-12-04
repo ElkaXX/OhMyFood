@@ -1,18 +1,18 @@
 // colors
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
 $tertiary-dark: #008766;
 $foreground: black;
 $light: white;
 $mid: #353535;
-$mid-tint:#7E7E7E;
-$mid-light: #EAEAEA;
-$mid-light-plus:#F6F6F6;
-$background: #F3F3F3;
+$mid-tint: #7e7e7e;
+$mid-light: #eaeaea;
+$mid-light-plus: #f6f6f6;
+$background: #f3f3f3;
 $background-secondary: $light;
 $background-dark: $mid;
-$background-tertiary:$mid-light-plus;
+$background-tertiary: $mid-light-plus;
 
 // breakpoints
 $xs: 0;
@@ -26,10 +26,7 @@ $xxl: 1400px;
 $header-font-size: 30px;
 $title-font-size: 24px;
 
-//animation 
+//animation
 $blink-opacity-start: 1;
 $blink-opacity-middle: 0;
 $blink-opacity-end: 1;
-
-
-

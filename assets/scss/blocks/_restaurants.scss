@@ -1,64 +1,104 @@
 @import "../base/variables";
-.restaurants{
-    padding: 48px 0 68px 0;
 
-        &__card{
-            height: 100%;
-            margin-top: 25px;
-        }
-            &__images{
-                width: 346px;
-                height: 231px;
-                border-radius: 15px 15px 0 0;
-            }
-            @keyframes blinkAnimation {
-                0% {
-                  opacity: $blink-opacity-start;
-                }
-                50% {
-                  opacity: $blink-opacity-middle;
-                }
-                100% {
-                  opacity: $blink-opacity-end;
-                }
-              }
-                &__marker{
-                    color: $tertiary-dark;
-                    font-size: 14px;
-                    font-weight: 500;
-                    width: 80px;
-                    height: 29px;
-                    border-radius: 2px;
-                    background: $tertiary;
-                    text-decoration: none;
-                    position: absolute;
-                    text-align: center;
-                    height: fit-content;
-                    padding: 7px 9px;
-                    left: 210px;
-                    animation: blinkAnimation 2s infinite;
-            }
+.restaurants {
+  padding: 48px 0 68px 0;
+  background-color: $background-tertiary;
 
+  &__list {
+    padding: 0;
+    margin-top: 26px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
 
-            &__text{
-                margin-left: 13px;
-            }
+    @media (min-width: $lg) {
+      flex-direction: row;
+      justify-content: space-between;
+      row-gap: 50px;
+    }
+  }
 
-                &__menu{
-                    font-size: 18px;
-                    font-weight: 700;
-                }
+  &__item {
+    position: relative;
+    width: 340px;
+    background-color: $light;
+    border-radius: 15px;
 
-                &__subtitle{
-                    font-size: 17px;
-                    font-weight: 300;
-                }
-                &__icon {
-                    cursor: pointer;
-                    background-color: $secondary;
-                    
-                }
-            }
-                  
-                    
-                
+    @media (min-width: $sm) {
+      width: 490px;
+    }
+  }
+
+  &__new {
+    position: absolute;
+    color: $tertiary-dark;
+    background: $tertiary;
+    right: 15px;
+    top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 9px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    animation: blinkAnimation 2s infinite;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 231px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 16px;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  &__like {
+    position: relative;
+    outline: none;
+    background-color: inherit;
+    width: 22px;
+    height: 21px;
+    border: none;
+  }
+
+  @keyframes blinkAnimation {
+    0% {
+      opacity: $blink-opacity-start;
+    }
+    50% {
+      opacity: $blink-opacity-middle;
+    }
+    100% {
+      opacity: $blink-opacity-end;
+    }
+  }
+}

@@ -1,33 +1,72 @@
 @import "../base/variables";
-.footer{
-    background-color: $mid;
+
+.footer {
+  height: 114px;
+  background-color: $mid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 22px 25px;
+  gap: 16px;
+
+  @media (min-width: $lg) {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
-    align-items: flex-start;
-    
+    flex-direction: column;
+    color: $light;
 
-    &__list {
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: column; 
-        color:$light;  
-        
-      }
+    @media (min-width: $lg) {
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+  }
 
-        &__link {
-            justify-content: center;
-            font-family: "Shrikhand",sans-serif;
-            font-size: 18px;
-            text-decoration: none;
-            font-weight: 400;
-            color:$light;  
-        }
-       
-            &__item{        
-                font-size: 16px;
-                font-weight: 500;  
-                text-decoration: none;
-        }
-            
-        
+  &__logo {
+    color: $light;
+    text-decoration: none;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+
+    &:hover {
+      color: $light;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &__icon {
+    width: 11px;
+    height: 13px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+
+    &_small {
+      font-weight: 400;
+    }
+  }
 }
