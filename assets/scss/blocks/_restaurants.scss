@@ -44,7 +44,6 @@
     padding: 7px 9px;
     border-radius: 2px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    animation: blinkAnimation 2s infinite;
   }
 
   &__link {
@@ -90,15 +89,4 @@
     border: none;
   }
 
-  @keyframes blinkAnimation {
-    0% {
-      opacity: $blink-opacity-start;
-    }
-    50% {
-      opacity: $blink-opacity-middle;
-    }
-    100% {
-      opacity: $blink-opacity-end;
-    }
-  }
 }

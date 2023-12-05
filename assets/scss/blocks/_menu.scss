@@ -1,0 +1,43 @@
+@import "../base/variables";
+.menu{
+    background: $background-tertiary;
+
+    &__name {
+        &__title {
+          font-family: "Shrikhand", sans-serif;
+        }
+    
+        &__like {
+            position: relative;
+            outline: none;
+            background-color: inherit;
+            width: 22px;
+            height: 21px;
+            border: none;
+          }
+      }
+    
+      &__plat {
+        &__title {
+            font-size: 16px;
+            font-weight: 300;
+        }
+    
+        &__list {
+          text-decoration: none;
+
+            &__item {
+              list-style: none;
+              padding: 0;
+    
+              
+            }
+          }
+    
+        }
+      }
+    
+  
+
+    
+   
