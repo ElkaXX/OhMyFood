@@ -1,8 +1,9 @@
 @import "../base/variables";
 .menu{
     background: $background-tertiary;
-    display: flex;
+    
 
+  &__container{
     &__link{
       display: flex;
 
@@ -24,11 +25,19 @@
         flex-direction: column;
     
         &__list {
+          display: flex;
+          width: 100%;
           background: $background-secondary;
+          overflow: hidden;
+          border-radius:15px;
+          padding: 0;
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+          outline: none;
+          border: none;
+          text-decoration: none;
           
             &__item {
-              text-decoration: none;
-
+             
               &__subtitle{ 
                 font-size: 18px;
                 font-weight: 500;
@@ -39,9 +48,9 @@
               }
             }
           }
-    
         }
       }
+    }
     
   
 
