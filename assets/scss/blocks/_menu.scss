@@ -1,36 +1,42 @@
 @import "../base/variables";
 .menu{
     background: $background-tertiary;
+    display: flex;
 
-    &__name {
-        &__title {
-          font-family: "Shrikhand", sans-serif;
-        }
-    
-        &__like {
-            position: relative;
-            outline: none;
-            background-color: inherit;
-            width: 22px;
-            height: 21px;
-            border: none;
-          }
+    &__link{
+      display: flex;
+
+      &__name {
+        font-family: $header-font-family;
       }
-    
-      &__plat {
-        &__title {
-            font-size: 16px;
-            font-weight: 300;
-        }
+      
+      &__like {
+        position: relative;
+        outline: none;
+        background-color: inherit;
+        width: 22px;
+        height: 21px;
+        border: none;
+      }
+    }
+      
+    &__plat {
+        flex-direction: column;
     
         &__list {
-          text-decoration: none;
-
+          background: $background-secondary;
+          
             &__item {
-              list-style: none;
-              padding: 0;
-    
-              
+              text-decoration: none;
+
+              &__subtitle{ 
+                font-size: 18px;
+                font-weight: 500;
+              }
+              &__description{
+                font-size: 15px;
+                font-weight: 300;
+              }
             }
           }
     
