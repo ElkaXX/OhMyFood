@@ -1,58 +1,82 @@
 @import "../base/variables";
-.menu{
-    background: $background-tertiary;
-    
+.menu {
+  background: $background-tertiary;
+  padding: 32px 0 0;
+  border-radius: 32px 32px 0 0;
 
-  &__container{
-    &__link{
-      display: flex;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-      &__name {
-        font-family: $header-font-family;
-      }
-      
-      &__like {
-        position: relative;
-        outline: none;
-        background-color: inherit;
-        width: 22px;
-        height: 21px;
-        border: none;
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    &__name {
+      font-family: $header-font-family;
+    }
+
+    &__like {
+      position: relative;
+      outline: none;
+      background-color: inherit;
+      width: 22px;
+      height: 21px;
+      border: none;
+    }
+  }
+
+  &__section {
+    margin: 40px 0;
+
+    &__title {
+      font-size: 16px;
+      font-weight: 300;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        bottom: -3px;
+        left: 0;
+        border-bottom: 3px solid #99e2d0;
       }
     }
-      
-    &__plat {
-        flex-direction: column;
-    
-        &__list {
+    &__list {
+      .menu__card {
+        margin-top: 12px;
+        padding: 15px;
+        background-color: $light;
+        border-radius: 15px;
+        box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+
+        &__title {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        &__content {
           display: flex;
-          width: 100%;
-          background: $background-secondary;
-          overflow: hidden;
-          border-radius:15px;
-          padding: 0;
-          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-          outline: none;
-          border: none;
-          text-decoration: none;
-          
-            &__item {
-             
-              &__subtitle{ 
-                font-size: 18px;
-                font-weight: 500;
-              }
-              &__description{
-                font-size: 15px;
-                font-weight: 300;
-              }
-            }
+          justify-content: space-between;
+          &__description {
+            font-size: 15px;
+            font-weight: 300;
+          }
+          &__price {
+            font-size: 15px;
+            font-weight: 700;
           }
         }
       }
     }
-    
-  
+  }
 
-    
-   
+  &__button {
+    width: 186px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    align-self: center;
+  }
+}

@@ -1,7 +1,6 @@
 @import "../base/variables";
 
 .footer {
-  height: 114px;
   background-color: $mid;
   display: flex;
   flex-direction: column;
@@ -9,11 +8,12 @@
   align-items: flex-start;
   padding: 22px 25px;
   gap: 16px;
-
+  
   @media (min-width: $lg) {
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: center;
+    height: 114px;
   }
 
   &__list {
