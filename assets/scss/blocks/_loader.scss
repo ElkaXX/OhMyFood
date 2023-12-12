@@ -1,157 +1,153 @@
 @import "../base/variables";
 
-  .loader {
-  position:absolute;
-  top: 113px;
-  padding: 32px;
-  border-radius: 16px;
-  width:100%;
-  height: 30%;
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1;
-  background-color: $tertiary;
-  animation: 8s fadeOut;
+  background-color: $mid-light;
+  animation: 4s fadeOut;
   animation-fill-mode: forwards;
+
+  &__wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
- @keyframes fadeOut {
-  0% {
-    display: block;
+  &__line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 8rem;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0;
+    margin-bottom: 16px;
+    background: $tertiary;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    outline: none;
+    border: none;
   }
-  50% {
-  opacity: 1;
-  }
-  100% {
- display: none;
- opacity: 0;
-  }
- }
-  
-  body {
-    perspective: 500px;
-  }
-  
-  h3 {
+
+  &__content {
     text-align: center;
     padding: 16px;
     margin: 0;
     font-family: "Shrikhand", sans-serif;
     letter-spacing: 15px;
     color: $light;
-    font-size: 50px;
-  }
- 
-  .line {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 8rem;
-    overflow: hidden;
-    border-radius:15px;
-    padding: 0;
-    margin-bottom: 16px;
-    background: $mid-tint;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    outline: none;
-    border: none;
-  }
+    font-size: 30px;
 
-  .lineUp {
-    animation: 6s anim-lineUp ease-out infinite;
-  }
- 
-  @keyframes anim-lineUp {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
+    &_first {
+      animation: 6s anim-lineUp ease-out infinite;
     }
-    20% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  
-  .flipY {
-    animation-name: spin, depth;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotateY(0deg);
-    }
-    100% {
-      transform: rotateY(-360deg);
-    }
-  }
-  
-  @keyframes depth {
-    0% {
-      text-shadow: 0 0 black;
-    }
-    25% {
-      text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
-    }
-    50% {
-      text-shadow: 0 0 black;
-    }
-    75% {
-      text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
-    }
-    100% {
-      text-shadow: 0 0 black;
-    }
-  }
-  
-  .pop-outin {
-    animation: 6s anim-popoutin ease infinite;
-  }
-  
-  @keyframes anim-popoutin {
-    0% {
-      color: black;
-      transform: scale(0);
-      opacity: 0;
-      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    }
-    25% {
-      color: #9356dc;
-      transform: scale(2);
-      opacity: 1;
-      text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
-    }
-    50% {
-      color: black;
-      transform: scale(1);
-      opacity: 1;
-      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
-    }
-    75% {
-      color: #ff79da;
-      transform: scale(1);
-      opacity: 1;
-      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
-    }
-  }
- 
- 
 
-  
-  
-  
-  
+    &_second {
+      animation-name: spin, depth;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+    }
 
+    &_third {
+      animation: 6s anim-popoutin ease infinite;
+    }
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    display: block;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes depth {
+  0% {
+    text-shadow: 0 0 black;
+  }
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+  50% {
+    text-shadow: 0 0 black;
+  }
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+      -5px 0 black;
+  }
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: #9356dc;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  75% {
+    color: #ff79da;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
