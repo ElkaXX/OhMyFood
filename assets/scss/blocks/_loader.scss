@@ -8,11 +8,11 @@
   height: 100%;
   z-index: 1;
   background-color: $mid-light;
-  animation: 4s fadeOut;
+  animation: 3s fadeOut;
   animation-fill-mode: forwards;
 
   &__wrapper {
-    margin-top: 20px;
+    margin-top: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,21 +42,21 @@
     font-family: "Shrikhand", sans-serif;
     letter-spacing: 15px;
     color: $light;
-    font-size: 30px;
+    font-size: 40px;
 
     &_first {
-      animation: 6s anim-lineUp ease-out infinite;
+      animation: 2s anim-lineUp ease-out infinite;
     }
 
     &_second {
       animation-name: spin, depth;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
-      animation-duration: 6s;
+      animation-duration: 3s;
     }
 
     &_third {
-      animation: 6s anim-popoutin ease infinite;
+      animation: 4s anim-popoutin ease infinite;
     }
   }
 }
