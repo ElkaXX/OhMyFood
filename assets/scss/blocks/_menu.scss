@@ -14,7 +14,7 @@
     z-index: -1;
 
     @media (min-width: $xl) {
-      height: 330px;
+      height: 383px;
     }
   }
 
@@ -22,7 +22,7 @@
     padding-top: 220px;
 
     @media (min-width: $xl) {
-      height: 330px;
+      padding-top: 343px;
     }
   }
 
@@ -37,8 +37,17 @@
   &__title {
     margin: 0;
     padding: 0;
+    margin-right: 15px;
     font-family: $header-font-family;
     font-size: 28px;
+
+    & > button {
+      margin-left: 24px;
+    }
+
+    @media (min-width: $lg) {
+      text-align: center;
+    }
   }
 
   &__section {
@@ -72,34 +81,37 @@
 
   &__item {
     display: flex;
-    min-width: 300px;
     border-radius: 15px;
     background-color: $light;
     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 
     &:hover {
+      .menu__wrapper {
+        width: 90%;
+      }
+
       .menu__checked {
         opacity: 1;
-        width: 60px;
+        width: 10%;
       }
     }
   }
 
   &__wrapper {
-    flex-grow: 1;
+    width: 100%;
     padding: 15px;
     display: flex;
+    transition: all 1s ease;
   }
 
   &__text {
     margin-right: 10px;
-    flex-grow: 1;
+    width: 70%;
   }
 
   &__name {
     font-size: 18px;
     font-weight: 500;
-    width: 200px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -108,7 +120,6 @@
   &__description {
     font-size: 15px;
     font-weight: 300;
-    width: 200px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -116,9 +127,11 @@
 
   &__price {
     align-self: flex-end;
+    text-align: right;
     font-size: 15px;
     font-weight: 700;
     transition: all 1s ease;
+    width: 30%;
   }
 
   &__checked {

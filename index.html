@@ -10,8 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    >
+      referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -43,8 +42,7 @@
       <section class="location">
         <a
           class="location__link"
-          href="https://www.openstreetmap.org/node/6288774453#map=19/48.87442/2.39940"
-        >
+          href="https://www.openstreetmap.org/node/6288774453#map=19/48.87442/2.39940">
           <i class="location__icon fa-solid fa-location-dot"></i>
           <span class="location__text">Paris, Belleville</span>
         </a>
@@ -69,33 +67,25 @@
           <h1 class="function__title title">Fonctionnement</h1>
           <ul class="function__list">
             <li class="function__item">
-              <button class="function__button">
-                <div class="function__elipse">1</div>
-                <div class="function__content">
-                  <i
-                    class="function__icon fa-solid fa-mobile-screen-button"
-                  ></i>
-                  <div class="function__text">Choisissez un restaurant</div>
-                </div>
-              </button>
+              <div class="function__elipse">1</div>
+              <div class="function__content">
+                <i class="function__icon fa-solid fa-mobile-screen-button"></i>
+                <div class="function__text">Choisissez un restaurant</div>
+              </div>
             </li>
             <li class="function__item">
-              <button class="function__button">
-                <div class="function__elipse">2</div>
-                <div class="function__content">
-                  <i class="function__icon fa-solid fa-list-ul"></i>
-                  <div class="function__text">Composez votre menu</div>
-                </div>
-              </button>
+              <div class="function__elipse">2</div>
+              <div class="function__content">
+                <i class="function__icon fa-solid fa-list-ul"></i>
+                <div class="function__text">Composez votre menu</div>
+              </div>
             </li>
             <li class="function__item">
-              <button class="function__button">
-                <div class="function__elipse">3</div>
-                <div class="function__content">
-                  <i class="function__icon fa-sharp fa-solid fa-store"></i>
-                  <div class="function__text">Dégustez au restaurant</div>
-                </div>
-              </button>
+              <div class="function__elipse">3</div>
+              <div class="function__content">
+                <i class="function__icon fa-sharp fa-solid fa-store"></i>
+                <div class="function__text">Dégustez au restaurant</div>
+              </div>
             </li>
           </ul>
         </div>
@@ -107,101 +97,121 @@
 
           <ul class="restaurants__list">
             <li class="restaurants__item">
+              <div class="restaurants__new">Nouveau</div>
               <a
                 href="./restaurants/first-restaurant-menu.html"
-                class="restaurants__link"
-              >
-                <div class="restaurants__new">Nouveau</div>
+                class="restaurants__link">
                 <img
                   class="restaurants__img"
                   src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                  alt="La palette du goût"
-                />
-
-                <div class="restaurants__content">
-                  <div class="restaurants__text">
-                    <div class="restaurants__subtitle">La palette du goût</div>
-                    <div class="restaurants__description">Ménilmontant</div>
-                  </div>
-
-                  <button class="restaurants__like">
-                    <i class="restaurants__icon fa-solid fa-heart"></i>
-                  </button>
-                </div>
+                  alt="La palette du goût" >
               </a>
+
+              <div class="restaurants__content">
+                <div class="restaurants__text">
+                  <div class="restaurants__subtitle">La palette du goût</div>
+                  <div class="restaurants__description">Ménilmontant</div>
+                </div>
+
+                <button class="restaurants__like button-heart">
+                  <img
+                    class="button-heart__default"
+                    src="assets/images/heart-default.png"
+                    alt="heart">
+                  <img
+                    class="button-heart__liked"
+                    src="assets/images/heart-liked.png"
+                    alt="heart">
+                </button>
+              </div>
             </li>
 
             <li class="restaurants__item">
+              <div class="restaurants__new">Nouveau</div>
               <a
                 href="./restaurants/third-restaurant-menu.html"
-                class="restaurants__link"
-              >
-                <div class="restaurants__new">Nouveau</div>
+                class="restaurants__link">
                 <img
                   class="restaurants__img"
                   src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                  alt="La note enchantée"
-                />
-
-                <div class="restaurants__content">
-                  <div class="restaurants__text">
-                    <div class="restaurants__subtitle">La note enchantée</div>
-                    <div class="restaurants__description">Charonne</div>
-                  </div>
-
-                  <button class="restaurants__like">
-                    <i class="restaurants__icon fa-regular fa-heart"></i>
-                  </button>
-                </div>
+                  alt="La note enchantée">
               </a>
+
+              <div class="restaurants__content">
+                <div class="restaurants__text">
+                  <div class="restaurants__subtitle">La note enchantée</div>
+                  <div class="restaurants__description">Charonne</div>
+                </div>
+
+                <button class="restaurants__like button-heart">
+                  <img
+                    class="button-heart__default"
+                    src="assets/images/heart-default.png"
+                    alt="heart">
+                  <img
+                    class="button-heart__liked"
+                    src="assets/images/heart-liked.png"
+                    alt="heart">
+                </button>
+              </div>
             </li>
 
             <li class="restaurants__item">
               <a
                 href="./restaurants/fourth-restaurant-menu.html"
-                class="restaurants__link"
-              >
+                class="restaurants__link">
                 <img
                   class="restaurants__img"
                   src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                  alt="À la française"
-                />
-
-                <div class="restaurants__content">
-                  <div class="restaurants__text">
-                    <div class="restaurants__subtitle">À la française</div>
-                    <div class="restaurants__description">Cité Rouge</div>
-                  </div>
-
-                  <button class="restaurants__like">
-                    <i class="restaurants__icon fa-regular fa-heart"></i>
-                  </button>
-                </div>
+                  alt="À la française">
               </a>
+
+              <div class="restaurants__content">
+                <div class="restaurants__text">
+                  <div class="restaurants__subtitle">À la française</div>
+                  <div class="restaurants__description">Cité Rouge</div>
+                </div>
+
+                <button class="restaurants__like button-heart">
+                  <img
+                    class="button-heart__default"
+                    src="assets/images/heart-default.png"
+                    alt="heart">
+                  <img
+                    class="button-heart__liked"
+                    src="assets/images/heart-liked.png"
+                    alt="heart">
+                </button>
+              </div>
             </li>
 
             <li class="restaurants__item">
               <a
                 href="./restaurants/second-restaurant-menu.html"
-                class="restaurants__link"
-              >
+                class="restaurants__link">
                 <img
                   class="restaurants__img"
                   src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                  alt="Le délice des sens"
-                />
-
-                <div class="restaurants__content">
-                  <div class="restaurants__text">
-                    <div class="restaurants__subtitle">Le délice des sens</div>
-                    <div class="restaurants__description">Folie-Méricourt</div>
-                  </div>
-
-                  <button class="restaurants__like">
-                    <i class="restaurants__icon fa-regular fa-heart"></i>
-                  </button>
-                </div>
+                  alt="Le délice des sens">
               </a>
+
+              <div class="restaurants__content">
+                <div class="restaurants__text">
+                  <div class="restaurants__subtitle">Le délice des sens</div>
+                  <div class="restaurants__description">Folie-Méricourt</div>
+                </div>
+
+                <button class="restaurants__like button-heart">
+                  <img
+                    class="button-heart__default"
+                    src="assets/images/heart-default.png"
+                    alt="heart">
+                  <img
+                    class="button-heart__liked"
+                    src="assets/images/heart-liked.png"
+                    alt="heart">
+                </button>
+              </div>
             </li>
           </ul>
         </div>
