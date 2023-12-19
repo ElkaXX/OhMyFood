@@ -32,6 +32,11 @@
     background-color: $background-tertiary;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+
+    @media (min-width: $md) {
+      padding-right: 190px;
+      padding-left: 190px;
+    }
   }
 
   &__title {
@@ -39,7 +44,10 @@
     padding: 0;
     margin-right: 15px;
     font-family: $header-font-family;
-    font-size: 28px;
+    font-size: $name-font-size;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     & > button {
       margin-left: 24px;
@@ -47,6 +55,7 @@
 
     @media (min-width: $lg) {
       text-align: center;
+      display: block;
     }
   }
 
@@ -87,12 +96,20 @@
 
     &:hover {
       .menu__wrapper {
-        width: 90%;
+        width: 80%;
+
+        @media (min-width: $lg) {
+           width: 90%;
+        }
       }
 
       .menu__checked {
         opacity: 1;
-        width: 10%;
+        width: 20%;
+
+        @media (min-width: $lg) {
+          width: 10%;
+       }
       }
     }
   }
@@ -115,6 +132,11 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 21ch;
+
+    @media (min-width: $sm) {
+      max-width: 200ch;
+   }
   }
 
   &__description {
@@ -123,6 +145,11 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 21ch;
+
+    @media (min-width: $sm) {
+      max-width: 200ch;
+   }
   }
 
   &__price {
@@ -136,7 +163,8 @@
 
   &__checked {
     display: flex;
-    width: 0;
+    left: 0;
+    width: 59px;
     background: $tertiary;
     border: none;
     border-radius: 0px 15px 15px 0px;

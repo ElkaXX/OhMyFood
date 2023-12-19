@@ -6,6 +6,13 @@
   padding: 40px 0 57px 0;
   text-align: center;
 
+  &__title{
+      @media (min-width: $lg) {
+      font-size: 40px;
+    }
+  }
+
+
   &__description {
     margin-top: 18px;
   }
