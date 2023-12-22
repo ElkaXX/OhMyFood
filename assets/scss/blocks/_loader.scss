@@ -37,8 +37,6 @@
     @media (min-width: $xl) {
       height: 8rem;
     }
-
-    
   }
 
   &__content {
@@ -47,7 +45,7 @@
     margin: 0;
     font-family: "Shrikhand", sans-serif;
     color: $light;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 2px;
 
     @media (min-width: $xl) {

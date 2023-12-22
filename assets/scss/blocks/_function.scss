@@ -27,7 +27,7 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     background: $background-tertiary;
-    width: 322px;
+    width: 280px;
     height: 72px;
     cursor: pointer;
 
@@ -37,6 +37,10 @@
 
     &:hover .function__icon {
       color: $primary;
+    }
+
+    @media (min-width: $sm) {
+      width: 322px;
     }
   }
 

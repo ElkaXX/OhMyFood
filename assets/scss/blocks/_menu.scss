@@ -45,7 +45,7 @@
     padding: 0;
     margin-right: 15px;
     font-family: $header-font-family;
-    font-size: $name-font-size;
+    font-size: 22px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,12 +56,21 @@
 
     @media (min-width: $sm) {
       text-align: center;
-      display: block;
+      justify-content: center;
+      font-size: $name-font-size;
     }
   }
 
   &__section {
     margin-top: 40px;
+    animation: slideUp 1s ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  @for $i from 2 through 4 {
+    &__section:nth-child(#{$i}) {
+      animation-delay: calc(#{$i}s - 1.5s);
+    }
   }
 
   &__category {
@@ -119,6 +128,7 @@
   &__text {
     margin-right: 10px;
     width: 80%;
+    flex: 1;
   }
 
   &__name {
@@ -172,5 +182,16 @@
     font-size: 16px;
     font-weight: 500;
     padding: 15px 50px 15px 50px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

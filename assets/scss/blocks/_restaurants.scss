@@ -24,11 +24,15 @@
 
   &__item {
     position: relative;
-    width: 340px;
+    width: 280px;
     background-color: $light;
     border-radius: 15px;
 
     @media (min-width: $sm) {
+      width: 340px;
+    }
+
+    @media (min-width: $md) {
       width: 490px;
     }
   }
